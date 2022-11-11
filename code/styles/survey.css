@@ -1,8 +1,9 @@
-/* https://gist.github.com/melanyss/26d249ef6c36a1d3f4fb2394bc3f2125 */
 /* https://unmaredascalare.github.io/codice/medallia.css */
+/* https://melanyss.github.io/code/styles/survey.css */
 ._md-container {
     display: none !important;
 }
+
 .provaRadio2:not(.kplFormHolder) {
     box-shadow: 0 0 5px 5px #c9c9c9 !important;
     border-radius: 5px !important;
@@ -10,6 +11,11 @@
     margin: 20px !important;
     padding: 8px !important;
 }
+
+p.ng-binding {
+    margin: 0.9%;
+}
+
 .titolo {
     background-color: white !important;
     border-radius: 15px !important;
@@ -19,26 +25,41 @@
     margin-top: -15px !important;
     box-shadow: 0 5px 5px #c9c9c9 !important;
 }
+
 .neb-web-component:not(.titolo, .immagine) {
     padding: 0px !important;
 }
+
 .img-responsive {
     width: 100% !important;
     border-radius: 0 0 20px 20px !important;
     padding-bottom: 8px;
 }
-div .md-checked {
+
+div.md-checked:not(.ng-valid) {
     box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
 }
 
 div.kpl-form-footer {
     visibility: hidden;
 }
+
 .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '2 di 3';
     padding-left: 4.5%;
     color: white;
     font-size: 15px;
+}
+
+div[fb-form='Prova'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '1 di 3';
+}
+
+div[fb-form='Prova2'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '2 di 3';
+}
+
+div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '2 di 3';
 }
 
 .immagine {
@@ -46,21 +67,25 @@ div.kpl-form-footer {
     background: linear-gradient(45deg, #820000 0%, #e60000 100%);
     margin: 0px !important;
 }
+
 .control-label {
     display: none;
 }
+
 img.ng-scope:not(.img-responsive, .img-fluid) {
     padding: 0 0 45px !important;
     width: 100% !important;
     max-width: 10000000px !important;
     max-height: 10000000px !important;
 }
+
 .thankYouPageLogoPreviewImage {
     margin-top: 0px !important;
     background: linear-gradient(45deg, #820000 0%, #e60000 100%);
     margin: 0px !important;
     border-radius: 0 0 20px 20px !important;
 }
+
 .fb-form-object {
     padding: 0px !important;
 }
