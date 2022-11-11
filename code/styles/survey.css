@@ -1,0 +1,66 @@
+/* https://gist.github.com/melanyss/26d249ef6c36a1d3f4fb2394bc3f2125 */
+/* https://unmaredascalare.github.io/codice/medallia.css */
+._md-container {
+    display: none !important;
+}
+.provaRadio2:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+.titolo {
+    background-color: white !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+    padding: 10px 0px 1px 20px !important;
+    margin-bottom: 0px !important;
+    margin-top: -15px !important;
+    box-shadow: 0 5px 5px #c9c9c9 !important;
+}
+.neb-web-component:not(.titolo, .immagine) {
+    padding: 0px !important;
+}
+.img-responsive {
+    width: 100% !important;
+    border-radius: 0 0 20px 20px !important;
+    padding-bottom: 8px;
+}
+div .md-checked {
+    box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
+}
+
+div.kpl-form-footer {
+    visibility: hidden;
+}
+.neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '2 di 3';
+    padding-left: 4.5%;
+    color: white;
+    font-size: 15px;
+}
+
+.immagine {
+    padding: 0 0 35px !important;
+    background: linear-gradient(45deg, #820000 0%, #e60000 100%);
+    margin: 0px !important;
+}
+.control-label {
+    display: none;
+}
+img.ng-scope:not(.img-responsive, .img-fluid) {
+    padding: 0 0 45px !important;
+    width: 100% !important;
+    max-width: 10000000px !important;
+    max-height: 10000000px !important;
+}
+.thankYouPageLogoPreviewImage {
+    margin-top: 0px !important;
+    background: linear-gradient(45deg, #820000 0%, #e60000 100%);
+    margin: 0px !important;
+    border-radius: 0 0 20px 20px !important;
+}
+.fb-form-object {
+    padding: 0px !important;
+}
