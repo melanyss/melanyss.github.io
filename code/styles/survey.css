@@ -108,3 +108,7 @@ div#thankYouPageText div.ng-binding p:nth-child(3) {
 div#thankYouPageText div.ng-binding p:last-child {
     display: none;
 }
+
+div#thankYouPageText div.ng-binding p:nth-child(2) span {
+    font-size: 13px;
+}
