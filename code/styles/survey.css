@@ -89,3 +89,11 @@ img.ng-scope:not(.img-responsive, .img-fluid) {
 .fb-form-object {
     padding: 0px !important;
 }
+
+div#thankYouPageText h3 span {
+    font-size: 19px;
+    font-weight: bold;
+}
+div#thankYouPageText p span:nth-child(2) strong span {
+    font-weight: bold;
+}
