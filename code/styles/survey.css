@@ -97,3 +97,14 @@ div#thankYouPageText h3 span {
 div#thankYouPageText p span:nth-child(2) strong span {
     font-weight: bold;
 }
+
+div.neb-content label.error {
+    text-align: center !important;
+}
+
+div#thankYouPageText div.ng-binding p:nth-child(3) {
+    margin-bottom: 0px;
+}
+div#thankYouPageText div.ng-binding p:last-child {
+    display: none;
+}
