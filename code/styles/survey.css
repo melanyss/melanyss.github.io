@@ -42,7 +42,8 @@ div.md-checked:not(.ng-valid) {
 }
 
 div.kpl-form-footer {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none !important;
 }
 
 .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
@@ -60,7 +61,7 @@ div[fb-form='Prova2'] .neb-component.neb-web-component.neb-image.kplFormHolder.i
 }
 
 div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '2 di 3';
+    content: '3 di 3';
 }
 
 .immagine {
@@ -117,6 +118,7 @@ div#thankYouPageText div.ng-binding p:nth-child(2) span {
 }
 
 div.modal-live-form {
-    height: 92%;
-    max-height: 100%;
+    height: 92% !important;
+    max-height: 100% !important;
+    display: block;
 }
