@@ -34,6 +34,7 @@ p.ng-binding {
     width: 100% !important;
     border-radius: 0 0 20px 20px !important;
     padding-bottom: 8px;
+    height: 16.5em;
 }
 
 div.md-checked:not(.ng-valid) {
@@ -63,9 +64,10 @@ div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.i
 }
 
 .immagine {
-    padding: 0 0 35px !important;
+    padding: 0 0 20px !important;
     background: linear-gradient(45deg, #820000 0%, #e60000 100%);
     margin: 0px !important;
+    text-align: center;
 }
 
 .control-label {
@@ -98,7 +100,8 @@ div#thankYouPageText p span:nth-child(2) strong span {
     font-weight: bold;
 }
 
-div.neb-content label.error {
+#liveForm .kpl_builder .pageRepeater label,
+#liveForm .kpl_builder .kpl-thankYouHolder label.error {
     text-align: center !important;
 }
 
@@ -111,4 +114,9 @@ div#thankYouPageText div.ng-binding p:last-child {
 
 div#thankYouPageText div.ng-binding p:nth-child(2) span {
     font-size: 13px;
+}
+
+div.modal-live-form {
+    height: 92%;
+    max-height: 100%;
 }
