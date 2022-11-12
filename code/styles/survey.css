@@ -1,4 +1,4 @@
-/* https://unmaredascalare.github.io/codice/medallia.css */
+/* template: https://unmaredascalare.github.io/codice/medallia.css */
 /* https://melanyss.github.io/code/styles/survey.css */
 ._md-container {
     display: none !important;
@@ -30,11 +30,34 @@ p.ng-binding {
     padding: 0px !important;
 }
 
+.immagine {
+    padding: 0 0 20px !important;
+    background: linear-gradient(45deg, #820000 0%, #e60000 100%);
+    margin: 0px !important;
+    text-align: center;
+}
+
 .img-responsive {
     width: 100% !important;
     border-radius: 0 0 20px 20px !important;
     padding-bottom: 8px;
     height: 16.5em;
+}
+
+div.thankYouPageLogoPreviewImage.ng-scope::after {
+    content: 'Sfida completata!';
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+div.kpl-thankYouHolder {
+    padding-top: 0px !important;
+}
+
+div.kpl-thankYouHolder div:nth-child(1) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 
 div.md-checked:not(.ng-valid) {
@@ -64,22 +87,15 @@ div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.i
     content: '3 di 3';
 }
 
-.immagine {
-    padding: 0 0 20px !important;
-    background: linear-gradient(45deg, #820000 0%, #e60000 100%);
-    margin: 0px !important;
-    text-align: center;
-}
-
 .control-label {
     display: none;
 }
 
 img.ng-scope:not(.img-responsive, .img-fluid) {
-    padding: 0 0 45px !important;
+    padding: 0 0 10px !important;
     width: 100% !important;
-    max-width: 10000000px !important;
-    max-height: 10000000px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
 }
 
 .thankYouPageLogoPreviewImage {
@@ -87,6 +103,7 @@ img.ng-scope:not(.img-responsive, .img-fluid) {
     background: linear-gradient(45deg, #820000 0%, #e60000 100%);
     margin: 0px !important;
     border-radius: 0 0 20px 20px !important;
+    padding-bottom: 10px;
 }
 
 .fb-form-object {
