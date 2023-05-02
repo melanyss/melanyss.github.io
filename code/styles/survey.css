@@ -2,20 +2,55 @@
 /* https://melanyss.github.io/code/styles/survey.css */
 /* Last Update: 02/05/2023 */
 
-._md-container {
-    display: none !important;
+:root {
+    /* Answers box-shadows */
+    --right-answer: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
+    --general-answer: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
 }
 
-/* First radio button of first page */
-.provaRadio2:not(.kplFormHolder) {
-    box-shadow: 0 0 5px 5px #c9c9c9 !important;
-    border-radius: 5px !important;
-    background-color: white !important;
-    margin: 20px !important;
-    padding: 8px !important;
+div[fb-form='Prova'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '1 di 4';
 }
 
-/* Updated Text R1 */
+div[fb-form='Prova2'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '2 di 4';
+}
+
+div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '3 di 4';
+}
+
+div[fb-form='Prova4'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '4 di 4';
+}
+
+/* General Box shadow on checked answer */
+div.md-checked:not(.ng-valid) {
+    box-shadow: var(--general-answer);
+}
+
+/* Specific box-shadow for checked right answer */
+/* 1° page */
+div.provaRadio:not(.ng-valid):nth-child(2).md-checked {
+    box-shadow: var(--right-answer);
+}
+
+/* 2° page */
+div.provaRadio2:not(.ng-valid):nth-child(3).md-checked {
+    box-shadow: var(--right-answer);
+}
+
+/* 3° page */
+div.provaRadio3:not(.ng-valid):nth-child(1).md-checked {
+    box-shadow: var(--right-answer);
+}
+
+/* 4° page */
+div.provaRadio4:not(.ng-valid):nth-child(3).md-checked {
+    box-shadow: var(--right-answer);
+}
+
+/* Options customization */
 .provaRadio:not(.kplFormHolder) {
     box-shadow: 0 0 5px 5px #c9c9c9 !important;
     border-radius: 5px !important;
@@ -24,21 +59,32 @@
     padding: 8px !important;
 }
 
-/* Box shadow on checked radio button */
-div.md-checked:not(.ng-valid) {
-    box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
+.provaRadio2:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
 }
 
-/* edit image dimension */
-#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewImage img {
-    max-height: 100% !important;
-    max-width: 100% !important;
-    padding-bottom: 10px;
+.provaRadio3:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
 }
 
-/* edit text after image padding top */
-#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewText {
-    padding-top: 15px !important;
+.provaRadio4:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+
+._md-container {
+    display: none !important;
 }
 
 p.ng-binding {
@@ -100,22 +146,6 @@ div.kpl-form-footer {
     font-size: 15px;
 }
 
-div[fb-form='Prova'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '1 di 4';
-}
-
-div[fb-form='Prova2'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '2 di 4';
-}
-
-div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '3 di 4';
-}
-
-div[fb-form='Prova4'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '4 di 4';
-}
-
 .control-label {
     display: none;
 }
@@ -169,4 +199,16 @@ div.modal-live-form {
     height: 92% !important;
     max-height: 100% !important;
     display: block;
+}
+
+/* typ image dimension */
+#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewImage img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    padding-bottom: 10px;
+}
+
+/* padding top  typ text after image */
+#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewText {
+    padding-top: 15px !important;
 }
