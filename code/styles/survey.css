@@ -2,12 +2,6 @@
 /* https://melanyss.github.io/code/styles/survey.css */
 /* Last Update: 02/05/2023 */
 
-:root {
-    /* Answers box-shadows */
-    --right-answer: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
-    --general-answer: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
-}
-
 div[fb-form='Prova'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
     content: '1 di 4';
 }
@@ -26,28 +20,28 @@ div[fb-form='Prova4'] .neb-component.neb-web-component.neb-image.kplFormHolder.i
 
 /* General Box shadow on checked answer */
 div.md-checked:not(.ng-valid) {
-    box-shadow: var(--general-answer);
+    box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
 }
 
 /* Specific box-shadow for checked right answer */
 /* 1° page */
 div.provaRadio:not(.ng-valid):nth-child(2).md-checked {
-    box-shadow: var(--right-answer);
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
 }
 
 /* 2° page */
 div.provaRadio2:not(.ng-valid):nth-child(3).md-checked {
-    box-shadow: var(--right-answer);
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
 }
 
 /* 3° page */
 div.provaRadio3:not(.ng-valid):nth-child(1).md-checked {
-    box-shadow: var(--right-answer);
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
 }
 
 /* 4° page */
 div.provaRadio4:not(.ng-valid):nth-child(3).md-checked {
-    box-shadow: var(--right-answer);
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
 }
 
 /* Options customization */
