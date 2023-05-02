@@ -1,15 +1,44 @@
 /* template: https://unmaredascalare.github.io/codice/medallia.css */
 /* https://melanyss.github.io/code/styles/survey.css */
+/* Last Update: 02/05/2023 */
+
 ._md-container {
     display: none !important;
 }
 
+/* First radio button of first page */
 .provaRadio2:not(.kplFormHolder) {
     box-shadow: 0 0 5px 5px #c9c9c9 !important;
     border-radius: 5px !important;
     background-color: white !important;
     margin: 20px !important;
     padding: 8px !important;
+}
+
+/* Updated Text R1 */
+.provaRadio:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+
+/* Box shadow on checked radio button */
+div.md-checked:not(.ng-valid) {
+    box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
+}
+
+/* edit image dimension */
+#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewImage img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    padding-bottom: 10px;
+}
+
+/* edit text after image padding top */
+#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewText {
+    padding-top: 15px !important;
 }
 
 p.ng-binding {
@@ -47,7 +76,7 @@ p.ng-binding {
 div.thankYouPageLogoPreviewImage.ng-scope::after {
     content: 'Sfida completata!';
     color: white;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -58,10 +87,6 @@ div.kpl-thankYouHolder {
 div.kpl-thankYouHolder div:nth-child(1) {
     padding-right: 0px !important;
     padding-left: 0px !important;
-}
-
-div.md-checked:not(.ng-valid) {
-    box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
 }
 
 div.kpl-form-footer {
@@ -76,15 +101,19 @@ div.kpl-form-footer {
 }
 
 div[fb-form='Prova'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '1 di 3';
+    content: '1 di 4';
 }
 
 div[fb-form='Prova2'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '2 di 3';
+    content: '2 di 4';
 }
 
 div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
-    content: '3 di 3';
+    content: '3 di 4';
+}
+
+div[fb-form='Prova4'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '4 di 4';
 }
 
 .control-label {
@@ -114,6 +143,7 @@ div#thankYouPageText h3 span {
     font-size: 19px;
     font-weight: bold;
 }
+
 div#thankYouPageText p span:nth-child(2) strong span {
     font-weight: bold;
 }
@@ -126,6 +156,7 @@ div#thankYouPageText p span:nth-child(2) strong span {
 div#thankYouPageText div.ng-binding p:nth-child(3) {
     margin-bottom: 0px;
 }
+
 div#thankYouPageText div.ng-binding p:last-child {
     display: none;
 }
