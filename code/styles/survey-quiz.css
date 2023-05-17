@@ -1,0 +1,208 @@
+/* template: https://unmaredascalare.github.io/codice/medallia.css */
+/* https://melanyss.github.io/code/styles/survey.css */
+/* Last Update: 02/05/2023 */
+
+div[fb-form='Prova'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '1 di 4';
+}
+
+div[fb-form='Prova2'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '2 di 4';
+}
+
+div[fb-form='Prova3'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '3 di 4';
+}
+
+div[fb-form='Prova4'] .neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    content: '4 di 4';
+}
+
+/* General Box shadow on checked answer */
+div.md-checked:not(.ng-valid) {
+    box-shadow: rgb(230 0 0 / 40%) 0px 0px 0px 3px !important;
+}
+
+/* Specific box-shadow for checked right answer */
+/* 1° page
+div.provaRadio:not(.ng-valid):nth-child(2).md-checked {
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
+}
+
+/* 2° page
+div.provaRadio2:not(.ng-valid):nth-child(3).md-checked {
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
+}
+
+/* 3° page
+div.provaRadio3:not(.ng-valid):nth-child(1).md-checked {
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
+}
+
+/* 4° page
+div.provaRadio4:not(.ng-valid):nth-child(3).md-checked {
+    box-shadow: rgba(0, 200, 53, 0.4) 0px 0px 0px 3px !important;
+}
+*/
+/* Options customization */
+.provaRadio:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+
+.provaRadio2:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+
+.provaRadio3:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+
+.provaRadio4:not(.kplFormHolder) {
+    box-shadow: 0 0 5px 5px #c9c9c9 !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    margin: 20px !important;
+    padding: 8px !important;
+}
+
+._md-container {
+    display: none !important;
+}
+
+p.ng-binding {
+    margin: 0.9%;
+}
+
+.titolo {
+    background-color: white !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+    padding: 10px 0px 1px 20px !important;
+    margin-bottom: 0px !important;
+    margin-top: -15px !important;
+    box-shadow: 0 5px 5px #c9c9c9 !important;
+}
+
+.neb-web-component:not(.titolo, .immagine) {
+    padding: 0px !important;
+}
+
+.immagine {
+    padding: 0 0 20px !important;
+    background: linear-gradient(45deg, #820000 0%, #e60000 100%);
+    margin: 0px !important;
+    text-align: center;
+}
+
+.img-responsive {
+    width: 100% !important;
+    border-radius: 0 0 20px 20px !important;
+    padding-bottom: 8px;
+    height: 16.5em;
+}
+
+div.thankYouPageLogoPreviewImage.ng-scope::after {
+    content: 'Sfida completata!';
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.kpl-thankYouHolder {
+    padding-top: 0px !important;
+}
+
+div.kpl-thankYouHolder div:nth-child(1) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+div.kpl-form-footer {
+    /* visibility: hidden; */
+    display: none !important;
+}
+
+.neb-component.neb-web-component.neb-image.kplFormHolder.immagine::after {
+    padding-left: 4.5%;
+    color: white;
+    font-size: 15px;
+}
+
+.control-label {
+    display: none;
+}
+
+img.ng-scope:not(.img-responsive, .img-fluid) {
+    padding: 0 0 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+.thankYouPageLogoPreviewImage {
+    margin-top: 0px !important;
+    background: linear-gradient(45deg, #820000 0%, #e60000 100%);
+    margin: 0px !important;
+    border-radius: 0 0 20px 20px !important;
+    padding-bottom: 10px;
+}
+
+.fb-form-object {
+    padding: 0px !important;
+}
+
+div#thankYouPageText h3 span {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+div#thankYouPageText p span:nth-child(2) strong span {
+    font-weight: bold;
+}
+
+#liveForm .kpl_builder .pageRepeater label,
+#liveForm .kpl_builder .kpl-thankYouHolder label.error {
+    text-align: center !important;
+}
+
+div#thankYouPageText div.ng-binding p:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+div#thankYouPageText div.ng-binding p:last-child {
+    display: none;
+}
+
+div#thankYouPageText div.ng-binding p:nth-child(2) span {
+    font-size: 13px;
+}
+
+div.modal-live-form {
+    height: 92% !important;
+    max-height: 100% !important;
+    display: block;
+}
+
+/* typ image dimension */
+#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewImage img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    padding-bottom: 10px;
+}
+
+/* padding top  typ text after image */
+#liveForm .kpl_builder .kpl-thank-you .kpl-thankYouHolder .thankYouPageLogoPreviewText {
+    padding-top: 15px !important;
+}
