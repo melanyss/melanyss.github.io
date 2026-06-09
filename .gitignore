@@ -1,0 +1,11 @@
+# Never commit AI session logs / local tooling state again
+.specstory/
+.remember/
+.cursorindexingignore
+.cursor/
+.vscode/
+.DS_Store
+
+# Anything explicitly kept local-only
+/legacy/
+/_archive/
